@@ -23,9 +23,19 @@ body {
   line-height: 48px;
 }
 
+.customButton a {
+  font-family: Proxima Nova Semibold;
+  color: black;
+  line-height: 48px;
+}
+
 .customButton:hover {
   background: black;
   border: 2px solid white;
+  color: white
+}
+
+.customButton:hover a{
   color: white
 }
 
