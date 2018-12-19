@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <header>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">FR</a></li>
+        <li><a href="#">EN</a></li>
+        <li><a href="#">CH</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper black">
+          <ul class="left">
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#" data-target="dropdown1">FR<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="connexion.html">Se connecter</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="#">Mentions Légales</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <form class="col s12" action="end.html" method="post">
+
+          <div class="form1 active">
+            <div class="col s12 m6">
+              <label id="prenom" for="prenom">Votre prénom</label>
+              <input type="text" name="prenom" value="">
+            </div>
+            <div class="col s12 m6">
+              <label id="nom" for="nom">Votre Nom</label>
+              <input type="text" name="nom" value="">
+            </div>
+            <div class="col s12">
+              <label id="email" for="email">Votre Email</label>
+              <input type="text" name="email" value="">
+            </div>
+            <div class="col s12">
+              <label id="anniversaire" for="anniversaire">Votre date de naissance</label>
+              <input placeholder="jj/mm/aa" type="text" name="anniversaire" value="">
+            </div>
+            <div class="right">
+                <button class="formButton1" type="button" name="button">Suivant<i class="material-icons right">arrow_forward</i></button>
+            </div>
+          </div>
+
+          <div class="form2">
+            <p>Votre civilité</p>
+            <div class="col m6 s12">
+              <div class="center box box1">
+                <img src="assets/images/man.png" alt="">
+                <p>Monsieur</p>
+              </div>
+            </div>
+            <div class="col m6 s12">
+              <div class="center box box2">
+                <img src="assets/images/woman.png" alt="">
+                <p>Madame</p>
+              </div>
+            </div>
+
+            <div class="right">
+                <button class="formButton2" type="button" name="button">Suivant<i class="material-icons right">arrow_forward</i></button>
+            </div>
+          </div>
+
+          <div class="form3">
+            <div class="col s12">
+              <label id="address" for="address">Votre adresse</label>
+              <input type="text" name="address" value="">
+            </div>
+            <div class="col s12">
+              <label id="zip_code" for="zip_code">Code postal</label>
+              <input type="text" name="zip_code" value="">
+            </div>
+            <div class="col s12">
+              <label id="city" for="city">Ville</label>
+              <input type="text" name="city" value="">
+            </div>
+            <div class="col s12">
+              <label id="country" for="country">Pays</label>
+              <input type="text" name="country" value="">
+            </div>
+            <div class="right">
+              <button class="formButton3" type="submit" name="button">Envoyer<i class="material-icons right">arrow_forward</i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+      <script type="text/javascript" src="assets/js/functions.js"></script>
+      <script type="text/javascript" src="assets/js/form.js"></script>
+    </body>
+  </html>
